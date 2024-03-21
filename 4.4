@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int max(int a, int b, int c) {
+    return max(max(a, b), c);
+}
+string max(string a, string b, string c) {
+    return max(max(a, b), c);
+}
+
+int main() {
+    cout << "Max of 5, 8, and 3 is: " << max(5, 8, 3) << endl;
+    cout << "Max of 'apple', 'banana', and 'orange' is: " <<
+    max("apple", "banana", "orange") << endl;
+
+    return 0;
+}
