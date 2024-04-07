@@ -1,0 +1,35 @@
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+class converter{
+    public:
+    double cm;
+
+   double cmToin(double cm){
+       return cm*0.393701;
+   }
+   double cmTofe(double cm){
+       return cm*0.0328084;
+   }
+   double cmTom(double cm){
+       return cm*0.01;
+   }
+   double cmTokm(double cm){
+       return cm*0.00001;
+   }
+};
+
+int main()
+{
+      converter e1;
+
+      cout<<"Enter Centimeter :- ";
+      cin>>e1.cm;
+        cout<<"Centimeter To Inch :- "<<e1.cmToin(e1.cm)<<endl;
+        cout<<"Centimeter To Feet :- "<<e1.cmTofe(e1.cm)<<endl;
+        cout<<"Centimeter To Meter :- "<<e1.cmTom(e1.cm)<<endl;
+        cout<<"Centimeter To Kilometer :- "<<e1.cmTokm(e1.cm)<<endl;
+      return 0;
+}
