@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class Info{
+double number;
+double coast;
+
+public:
+     
+ void put_data(double n,double c){
+   number = n ;
+   coast = c ;
+ }
+ double get_data();
+};
+
+double Info::get_data(){
+   cout << "The value of number : " << number << endl ;
+   cout << "The value of coast : " << coast ;
+   return 0;
+}
+
+
+int main() 
+{
+   Info i1;
+   i1.put_data(10,20);
+   i1.get_data();
+    
+   return 0;
+}
